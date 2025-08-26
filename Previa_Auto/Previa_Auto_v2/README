@@ -1,0 +1,48 @@
+============================================
+Robô de Automação da Prévia FCA - v2.0
+============================================
+
+O que este programa faz?
+Este robô automatiza todo o tratamento de dados da planilha de prévia, transformando a extração bruta do SAP no arquivo final para o Power BI. Ele cria a estrutura de pastas necessária automaticamente.
+
+--------------------------------------------
+COMO USAR - GUIA RÁPIDO
+--------------------------------------------
+
+1.  **PREPARAÇÃO (Apenas na primeira vez):**
+    * Descompacte o arquivo .zip em um local de fácil acesso (ex: sua Área de Trabalho).
+    * Coloque as planilhas de referência ('referencia_apps.xlsx' e 'referencia_fca_lag.xlsx') dentro da pasta `Referencias`.
+    * Verifique se o arquivo 'Prévia FCA 2023.xlsx' está no caminho correto do seu OneDrive, conforme configurado.
+    * Segue exemplo Visual
+    C:/Projetos/Robo_Previa_FCA/  <-- Pasta principal do seu projeto
+                │
+                ├── Referencias/
+                │   └── (Coloque aqui suas planilhas 'referencia_apps.xlsx' e 'referencia_fca_lag.xlsx')
+                │
+                ├── automacao_previa_app.py
+                ├── config.json
+                ├── EXECUTOR.bat
+                ├── setup_projeto.py 
+                └── README
+
+
+
+2.  **EXTRAÇÃO DO SAP (A cada execução):**
+    * Faça a extração do relatório LISTCUBE (YA_CONAN) no SAP.
+    * Salve a planilha com o nome EXATO: `LISTCUBE_Export.xlsx`
+    * Coloque este arquivo dentro da pasta `ExtracaoSAP` (se a pasta não existir, o robô a criará na primeira execução).
+
+3.  **EXECUÇÃO DO ROBÔ:**
+    * Dê um duplo clique no arquivo `RoboPreviaFCA.exe`.
+    * Clique no botão "Iniciar Processamento".
+    * Aguarde a mensagem de "Sucesso" ou "Erro".
+
+--------------------------------------------
+SOLUÇÃO DE PROBLEMAS
+--------------------------------------------
+
+* Se aparecer uma **mensagem de ERRO**, feche o programa e procure pelo arquivo `log_robo.txt` na mesma pasta. Envie este arquivo para o desenvolvedor para análise.
+
+--------------------------------------------
+Contato para dúvidas: Miguel Mariano Cabrera
+Data da versão: 12 de Agosto de 2025

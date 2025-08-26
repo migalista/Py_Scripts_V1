@@ -1,0 +1,31 @@
+{
+  "caminho_extracao_sap": "ExtracaoSAP/LISTCUBE_Export.xlsx",
+  "caminhos_referencia": {
+    "etapa_ush": {
+      "arquivo": "Referencias/referencia_apps.xlsx",
+      "chave_busca": "Ship to Country"
+    },
+    "etapa_fca_lag": {
+      "arquivo": "Referencias/referencia_fca_lag.xlsx",
+      "chave_busca": "YA_MATIDH"
+    }
+  },
+  "caminho_sharepoint_local": "OneDrive - Henkel/IB Plan LATAM - Documents/PBI/FCA/Prévia FCA 2023.xlsx",
+  "colunas_agrupamento": [
+    "Ship to Region",
+    "S.Org(Company Code)",
+    "Ship to Country",
+    "YA_SBUT",
+    "L1 Demand Planner",
+    "YA_MATIDH",
+    "YA_SLDTO",
+    "Delivering Plant"
+  ],
+  "colunas_valores": [
+    "Uncleansed Sales History / Orders",
+    "History uncleansed in Base unit of measu"
+  ],
+  "planilha_destino_col_inicio": 2,
+  "planilha_destino_col_fim": 23,
+  "planilha_destino_linha_inicio": 2
+}
